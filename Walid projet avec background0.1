@@ -1,0 +1,46 @@
+import pygame
+from pygame.locals import *
+from sys import exit
+
+pygame.init()
+
+fenetre = pygame.display.set_mode((1920, 1080), pygame.FULLSCREEN, 32)
+pygame.display.set_caption("Brawl")
+Plateforme= pygame.image.load("LES SPRITES/Plateforme.png")
+Lava = pygame.image.load("LES SPRITES/lava6.png")
+
+i=0
+def gererClavierEtSouris():
+    global continuer
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            continuer = 0
+
+        Press = pygame.key.get_pressed()
+        if Press[pygame.K_ESCAPE] == True:
+            continuer = 0
+def dessiner():
+    global  fenetre, i, j
+    fenetre.fill( (0,0,0) )
+    while i<8:
+        fenetre.blit( Plateforme,(450+i*123,700))
+        i=i+1
+    i=0
+    while i<3:
+        fenetre.blit(Lava,(0+i*600,900))
+        i=i+1
+    i=0
+    pygame.display.flip()
+
+
+
+clock = pygame.time.Clock()
+continuer = 1
+
+while continuer == 1:
+    clock.tick(60)
+    gererClavierEtSouris()
+    dessiner()
+
+pygame.quit()
+exit()
