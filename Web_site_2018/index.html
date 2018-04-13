@@ -1,0 +1,95 @@
+<DOCTYPE html>
+  <html id="html">
+
+  <head>
+    <title>How to make a web site!</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Free website :3">
+    <meta name="keywords" content="HTML, CSS, XML, Javascript">
+    <meta name="author" content="Charretier Mathis">
+    <meta http-equiv="refresh" content="10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css" />
+    <script src="Overlay.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+    <header class="container">
+      <div class="row">
+
+        <h1 class="col-sm-8">ISN</h1>
+        <nav class="col-sm-4">
+          <p><a href="#" onclick="Snackbar()">newest</a></p>
+          <p><a href="#" onclick="Snackbar()">catalogue</a></p>
+          <p><a href="#" onclick="Snackbar()">contact</a></p>
+        </nav>
+        <div id="main">
+          <span style="" onclick="openNav()">&#9776;</span>
+        </div>
+
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#" onclick="Snackbar()">About</a>
+          <a href="#" onclick="Snackbar()">Services</a>
+          <a href="#" onclick="Snackbar()">Clients</a>
+          <a href="#" onclick="Snackbar()">Contact</a>
+        </div>
+        <div id="snackbar">Ok master let's go...</div>
+      </div>
+    </header>
+
+    <section class="jumbotron">
+      <div class="container">
+        <div class="row text-center">
+          <h2>Artificial Intelligence</h2>
+          <h3>Présentation</h3>
+          <a class="btn btn-primary" href="#" role="button" onclick="Snackbar()">See all</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row">
+        <figure class="col-sm-12">
+          <h2>L’intelligence artificielle de Google a créé sa propre I.A. et celle-ci surpasse celle de l’Homme</h2></br>
+          <p>Il y a quelques mois, Google Brain avait annoncé la sortie de l’I.A. baptisée AutoML, capable de générer d’autres I.A. plus performantes. Dernièrement, cette intelligence artificielle a « enfanté » une autre I.A. qui surpasse tout ce qu’a pu
+            faire l’Homme dans ce domaine. Nous voici face à la seconde étape de ce qu’est capable de faire l’intelligence artificielle.</p></br>
+          <p>
+            Il faut tout d’abord savoir qu’AutoML agit comme un contrôleur de réseau neuronal, dont le but est de développer d’autres I.A « enfant » afin d’effectuer des tâches spécifiques. Ceci a été rendu possible par le biais de l’apprentissage par renforcement
+            (ou machine learning). La nouvelle I.A. engendrée par AutoML a été baptisée NASNet, comme l’indique une publication du 2 novembre 2017 dans le blog de Google Research.</p></br>
+          <p>
+            La mission de NASNet est de pouvoir reconnaître en temps réel par le biais de la vidéo, une multitude d’objets tels que des voitures, des personnes, la signalisation routière, des sacs à dos et bien d’autres. Ensuite, AutoML évalue les performances de
+            NASNet et tente de l’améliorer, une opération qui sera répétée indéfiniment afin d’atteindre une quasi-perfection. Indissociable de l’I.A., le machine learning est évidemment présent et en automatisant le processus de création d’I.A. par le
+            biais d’AutoML, il y a là un sérieux gain de temps.
+          </p></br>
+          <img src="images/neural_network.jpg" /></br>
+          <p>Il s’avère que NASNet a surpassé n’importe quelle autre I.A., avec une précision de 82,7 %, au moment de tester le système sur des bases de données de classification d’images telles que ImageNet et Common Objects in COntext (COCO). Si la première
+            n’est qu’une base de données d’images organisées, la seconde est légèrement plus complexe, contenant des données de détection, de segmentation et de sous-titrage d’objets.</p></br>
+          <img src="images/google_pic.jpeg" /></br>
+          <p>Une telle innovation, intégrant des algorithmes de vision artificielle très performants, pourrait trouver de nombreuses applications : aider les malvoyants à retrouver la vue, créer des robots du futur alimentés par l’I.A. ou encore améliorer
+            les techniques de repérage d’objet en ce qui concerne les voitures autonomes.</p></br>
+          <p>Évidemment, une I.A. en créant une autre qui surpasse toutes celles élaborées par l’Homme, cela inquiète. Cependant, les acteurs du domaine désirent se montrer rassurants. Google, Amazon, Facebook, Apple et d’autres ont en 2016 scellé un partenariat
+            sur l’I.A. censé assurer un développement responsable. Citons également l’Institute of Electrical and Electronics Engineers (IEE) ayant proposé des normes éthiques concernant l’intelligence artificielle. Les états essayent également de suivre
+            au niveau des lois en interdisant l’utilisation de l’I.A. à des fins dangereuses (ex. : armes autonomes). Le but ? Ne pas aller trop loin et garder le contrôle, mais cela sera peut-être de plus en plus compliqué à l’avenir.
+          </p></br>
+        </figure>
+      </div>
+    </section>
+
+    <footer class="container">
+      <div class="row">
+        <p class="col-sm-4">&copy; 2018 ISN</p>
+        <ul class="col-sm-8">
+          <li class="col-sm-1"><a href="https://twitter.com/?lang=fr" target="_blank"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"></a></li>
+          <li class="col-sm-1"><a href="https://www.facebook.com/ target="_blank><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"></a></li>
+          <li class="col-sm-1"><a href="https://www.instagram.com/" target="_blank"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"></a></li>
+          <li class="col-sm-1"><a href="https://medium.com/" target="_blank"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+
+  </html>
