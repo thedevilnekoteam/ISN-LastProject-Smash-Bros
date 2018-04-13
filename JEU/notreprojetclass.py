@@ -5,37 +5,47 @@ pygame.init()
 fenetre = pygame.display.set_mode((1000, 600))
 
 pygame.display.set_caption("Smash Mugging")
-animD = [pygame.image.load("LES SPRITES/png/LeRobot/Run/RunD (1).png"), pygame.image.load("LES SPRITES/png/LeRobot/Run/RunD (2).png"),
-         pygame.image.load("LES SPRITES/png/LeRobot/Run/RunD (3).png"), pygame.image.load("LES SPRITES/png/LeRobot/Run/RunD (4).png"),
-         pygame.image.load("LES SPRITES/png/LeRobot/Run/RunD (5).png"), pygame.image.load("LES SPRITES/png/LeRobot/Run/RunD (6).png"),
-         pygame.image.load("LES SPRITES/png/LeRobot/Run/RunD (7).png"), pygame.image.load("LES SPRITES/png/LeRobot/Run/RunD (8).png")]
+animD = [pygame.image.load("Sprites/png/LeRobot/Run/RunD (1).png"), pygame.image.load("Sprites/png/LeRobot/Run/RunD (2).png"),
+         pygame.image.load("Sprites/png/LeRobot/Run/RunD (3).png"), pygame.image.load(
+             "Sprites/png/LeRobot/Run/RunD (4).png"),
+         pygame.image.load("Sprites/png/LeRobot/Run/RunD (5).png"), pygame.image.load(
+             "Sprites/png/LeRobot/Run/RunD (6).png"),
+         pygame.image.load("Sprites/png/LeRobot/Run/RunD (7).png"), pygame.image.load("Sprites/png/LeRobot/Run/RunD (8).png")]
 
 
-animG = [pygame.image.load("LES SPRITES/png/LeRobot/Run/RunG (1).png"), pygame.image.load("LES SPRITES/png/LeRobot/Run/RunG (2).png"),
-         pygame.image.load("LES SPRITES/png/LeRobot/Run/RunG (3).png"), pygame.image.load("LES SPRITES/png/LeRobot/Run/RunG (4).png"),
-         pygame.image.load("LES SPRITES/png/LeRobot/Run/RunG (5).png"), pygame.image.load("LES SPRITES/png/LeRobot/Run/RunG (6).png"),
-         pygame.image.load("LES SPRITES/png/LeRobot/Run/RunG (7).png"), pygame.image.load("LES SPRITES/png/LeRobot/Run/RunG (8).png")]
+animG = [pygame.image.load("Sprites/png/LeRobot/Run/RunG (1).png"), pygame.image.load("Sprites/png/LeRobot/Run/RunG (2).png"),
+         pygame.image.load("Sprites/png/LeRobot/Run/RunG (3).png"), pygame.image.load(
+             "Sprites/png/LeRobot/Run/RunG (4).png"),
+         pygame.image.load("Sprites/png/LeRobot/Run/RunG (5).png"), pygame.image.load(
+             "Sprites/png/LeRobot/Run/RunG (6).png"),
+         pygame.image.load("Sprites/png/LeRobot/Run/RunG (7).png"), pygame.image.load("Sprites/png/LeRobot/Run/RunG (8).png")]
 
 # nemarche toujours pas:
-Feu = [pygame.image.load("LES SPRITES/png/LeRobot/Shoot/Bullet_001.png"),
-       pygame.image.load("LES SPRITES/png/LeRobot/Shoot/Bullet_002.png")]  #AUGMENTER LA TAILLE DES BOULES ?
+Feu = [pygame.image.load("Sprites/png/LeRobot/Shoot/Bullet_001.png"),
+       pygame.image.load("Sprites/png/LeRobot/Shoot/Bullet_002.png")]  # AUGMENTER LA TAILLE DES BOULES ?
 
 
-animDr = [pygame.image.load("LES SPRITES/png/LeNinja/NinjaD/Run__000.png"), pygame.image.load("LES SPRITES/png/LeNinja/NinjaD/Run__001.png"),
-          pygame.image.load("LES SPRITES/png/LeNinja/NinjaD/Run__002.png"), pygame.image.load("LES SPRITES/png/LeNinja/NinjaD/Run__003.png"),
-          pygame.image.load("LES SPRITES/png/LeNinja/NinjaD/Run__004.png"), pygame.image.load("LES SPRITES/png/LeNinja/NinjaD/Run__005.png"),
-          pygame.image.load("LES SPRITES/png/LeNinja/NinjaD/Run__006.png"), pygame.image.load("LES SPRITES/png/LeNinja/NinjaD/Run__007.png"),
-          pygame.image.load("LES SPRITES/png/LeNinja/NinjaD/Run__008.png"), pygame.image.load("LES SPRITES/png/LeNinja/NinjaD/Run__009.png")]
+animDr = [pygame.image.load("Sprites/png/LeNinja/NinjaD/Run__000.png"), pygame.image.load("Sprites/png/LeNinja/NinjaD/Run__001.png"),
+          pygame.image.load("Sprites/png/LeNinja/NinjaD/Run__002.png"), pygame.image.load(
+              "Sprites/png/LeNinja/NinjaD/Run__003.png"),
+          pygame.image.load("Sprites/png/LeNinja/NinjaD/Run__004.png"), pygame.image.load(
+              "Sprites/png/LeNinja/NinjaD/Run__005.png"),
+          pygame.image.load("Sprites/png/LeNinja/NinjaD/Run__006.png"), pygame.image.load(
+              "Sprites/png/LeNinja/NinjaD/Run__007.png"),
+          pygame.image.load("Sprites/png/LeNinja/NinjaD/Run__008.png"), pygame.image.load("Sprites/png/LeNinja/NinjaD/Run__009.png")]
 
 
-animGa = [pygame.image.load("LES SPRITES/png/LeNinja/NinjaG/Run__000.png"), pygame.image.load("LES SPRITES/png/LeNinja/NinjaG/Run__001.png"),
-          pygame.image.load("LES SPRITES/png/LeNinja/NinjaG/Run__002.png"), pygame.image.load("LES SPRITES/png/LeNinja/NinjaG/Run__003.png"),
-          pygame.image.load("LES SPRITES/png/LeNinja/NinjaG/Run__004.png"), pygame.image.load("LES SPRITES/png/LeNinja/NinjaG/Run__005.png"),
-          pygame.image.load("LES SPRITES/png/LeNinja/NinjaG/Run__006.png"), pygame.image.load("LES SPRITES/png/LeNinja/NinjaG/Run__007.png"),
-          pygame.image.load("LES SPRITES/png/LeNinja/NinjaG/Run__008.png"), pygame.image.load("LES SPRITES/png/LeNinja/NinjaG/Run__009.png")]
+animGa = [pygame.image.load("Sprites/png/LeNinja/NinjaG/Run__000.png"), pygame.image.load("Sprites/png/LeNinja/NinjaG/Run__001.png"),
+          pygame.image.load("Sprites/png/LeNinja/NinjaG/Run__002.png"), pygame.image.load(
+              "Sprites/png/LeNinja/NinjaG/Run__003.png"),
+          pygame.image.load("Sprites/png/LeNinja/NinjaG/Run__004.png"), pygame.image.load(
+              "Sprites/png/LeNinja/NinjaG/Run__005.png"),
+          pygame.image.load("Sprites/png/LeNinja/NinjaG/Run__006.png"), pygame.image.load(
+              "Sprites/png/LeNinja/NinjaG/Run__007.png"),
+          pygame.image.load("Sprites/png/LeNinja/NinjaG/Run__008.png"), pygame.image.load("Sprites/png/LeNinja/NinjaG/Run__009.png")]
 
 # Il faut l'anime(Des etoiles deriÃƒÆ’Ã‚Â¨re):
-bg = pygame.image.load("LES SPRITES/Background/Arene.png")
+bg = pygame.image.load("Sprites/Background/Arene.png")
 #
 clock = pygame.time.Clock()
 
@@ -62,75 +72,60 @@ class Player(object):
         self.onpetitarena1 = False
         self.onpetitarena2 = False
         self.onhautearena = False
-        self.Vie =0
+        self.Vie = 0
 
     def draw(self, fenetre):
 
+                # Vie:
+        arial24 = pygame.font.SysFont("arial", 25)
+        # Ninja:
+        VieN = arial24.render(str(Ninja.Vie) + "%", True,
+                              pygame.Color(155, 155, 155))
+        fenetre.blit(VieN, (892, 575))
+        fenetre.blit(pygame.image.load(
+            "Sprites/png/LeNinja/Vie/Vie.png"), (920, 500))
+        # Robot:
+        VieR = arial24.render(str(Robot.Vie) + "%", True,
+                              pygame.Color(155, 155, 155))
+        fenetre.blit(VieR, (100, 575))
+        fenetre.blit(pygame.image.load(
+            "Sprites/png/LeRobot/Vie/Vie.png"), (0, 500))
+        # Robot:
 
-
-
-
-                #Vie:
-        arial24= pygame.font.SysFont("arial",25)
-        #Ninja:
-        VieN=arial24.render(str(Ninja.Vie)+"%",True,pygame.Color(155,155,155))
-        fenetre.blit(VieN,(892,575))
-        fenetre.blit(pygame.image.load("LES SPRITES/png/LeNinja/Vie/Vie.png"),(920,500))
-        #Robot:
-        VieR=arial24.render(str(Robot.Vie)+"%",True,pygame.Color(155,155,155))
-        fenetre.blit(VieR,(100,575))
-        fenetre.blit(pygame.image.load("LES SPRITES/png/LeRobot/Vie/Vie.png"),(0,500))
-        #Robot:
-
-
-
-
-
-
-
-        #Animation Robot:
+        # Animation Robot:
         if Robot.Compteurmarche + 1 >= 24:
             Robot.Compteurmarche = 0
 
-
-
         if not (Robot.standing):
             if Robot.left:
-                fenetre.blit(animG[Robot.Compteurmarche // 3], (Robot.x, Robot.y))
+                fenetre.blit(animG[Robot.Compteurmarche // 3],
+                             (Robot.x, Robot.y))
                 Robot.Compteurmarche += 1
 
             elif Robot.right:
-                fenetre.blit(animD[Robot.Compteurmarche // 3], (Robot.x, Robot.y))
+                fenetre.blit(animD[Robot.Compteurmarche // 3],
+                             (Robot.x, Robot.y))
                 Robot.Compteurmarche += 1
-
 
         else:
             if Robot.right:
                 fenetre.blit(animD[0], (Robot.x, Robot.y))
 
-
             else:
                 fenetre.blit(animG[0], (Robot.x, Robot.y))
 
-
-
-
-
-
-
-
-
-
-        #Animation Ninja:
+        # Animation Ninja:
         if Ninja.Compteurmarche + 1 >= 27:
             Ninja.Compteurmarche = 0
 
         if not (Ninja.standing):
             if Ninja.left:
-                fenetre.blit(animGa[Ninja.Compteurmarche // 3], (Ninja.x, Ninja.y))
+                fenetre.blit(
+                    animGa[Ninja.Compteurmarche // 3], (Ninja.x, Ninja.y))
                 Ninja.Compteurmarche += 1
             elif Ninja.right:
-                fenetre.blit(animDr[Ninja.Compteurmarche // 3], (Ninja.x, Ninja.y))
+                fenetre.blit(
+                    animDr[Ninja.Compteurmarche // 3], (Ninja.x, Ninja.y))
                 Ninja.Compteurmarche += 1
 
         else:
@@ -140,7 +135,6 @@ class Player(object):
             else:
 
                 fenetre.blit(animGa[0], (Ninja.x, Ninja.y))
-
 
 
 class projectile(object):
@@ -153,11 +147,10 @@ class projectile(object):
         self.vit = 20 * facing
 
     def draw(self, fenetre):
-        if facing ==1:
-            fenetre.blit(Feu[0], (self.x , self.y))
+        if facing == 1:
+            fenetre.blit(Feu[0], (self.x, self.y))
         else:
-            fenetre.blit(Feu[1], (self.x , self.y))
-
+            fenetre.blit(Feu[1], (self.x, self.y))
 
 
 def redrawGameWindow():
@@ -246,7 +239,7 @@ while run:
         Robot.y += 7  # OPTI
 
     # Grande arene:
-    if 150 < Robot.x < 800 and 315 <= Robot.y <= 322:        #IL FAUT OPTI
+    if 150 < Robot.x < 800 and 315 <= Robot.y <= 322:  # IL FAUT OPTI
         Robot.impulsion = 1
         Robot.y -= 7
 
@@ -275,12 +268,11 @@ while run:
 
     # 2eme personnage:
 
-
     if keys[pygame.K_a] and Ninja.x > 0:
         Ninja.x -= Ninja.vit + 2
         Ninja.left = True
         Ninja.right = False
-        Ninja.standing= False
+        Ninja.standing = False
 
     elif keys[pygame.K_d] and Ninja.x < 1000 - Ninja.width:
         Ninja.x += Ninja.vit + 2
@@ -300,13 +292,12 @@ while run:
             Ninja.Compteurmarche = 0
 
     else:
-        if Ninja.impulsion >-1:
+        if Ninja.impulsion > -1:
             if Ninja.Compteursaut > 0:
-                Ninja.y -= (Ninja.Compteursaut ** 2) * 0.5 + 7             #CHANTIER
+                Ninja.y -= (Ninja.Compteursaut ** 2) * 0.5 + 7  # CHANTIER
                 Ninja.Compteursaut -= 1
             else:
                 Ninja.impulsion -= 1
-
 
         else:
 
